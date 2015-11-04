@@ -1,6 +1,6 @@
 class Goodjob
 {
 	public static void main(String args[]){
-	System.out.println("干的漂亮");
+		System.out.println("干得漂亮");
 	}
 }
