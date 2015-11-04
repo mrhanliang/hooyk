@@ -1,6 +1,6 @@
 class Goodjob
 {
 	public static void main(String args[]){
-	System.out.println("Goodjob!");
+	System.out.println("¸ÉµÄÆ¯ÁÁ");
 	}
 }
