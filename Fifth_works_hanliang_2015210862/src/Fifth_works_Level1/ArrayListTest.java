@@ -8,15 +8,15 @@ public class ArrayListTest {
 	public static void main(String args[]) {
 		List<String> arrayList = new ArrayList<String>();
 
-		boolean b = arrayList.isEmpty();// ÅĞ¶ÏÊÇ·ñÎª¿Õ¼¯£»
+		boolean b = arrayList.isEmpty();// åˆ¤æ–­æ˜¯å¦ä¸ºç©ºé›†
 
-		arrayList.add("a");// ArrayListµÄÔöÌí£»
+		arrayList.add("a");// ArrayListçš„å¢æ·»ï¼›
 		arrayList.add("b");
 		arrayList.add("c");
 
 		System.out.println(arrayList);
 
-		String j = arrayList.get(0);// ArrayListµÄÌá³ö£»
+		String j = arrayList.get(0);// ArrayListçš„æå‡ºï¼›
 		System.out.println(j);
 
 		for (int i = 0; i < arrayList.size(); i++) {
@@ -24,10 +24,10 @@ public class ArrayListTest {
 			System.out.println(s);
 		}
 
-		arrayList.remove(1);// ArrayListµÄÉ¾³ı£»
+		arrayList.remove(1);// ArrayListçš„åˆ é™¤ï¼›
 
-		arrayList.clear();// arrayListµÄÇå¿Õ£»
+		arrayList.clear();// arrayListçš„æ¸…ç©ºï¼›
 		int n = arrayList.size();
-		System.out.println("ÔÚclearºóarrayListµÄ´óĞ¡--¡·" + n);
+		System.out.println("åœ¨clearåarrayListçš„å¤§å°--ã€‹" + n);
 	}
 }

@@ -16,32 +16,32 @@ public class SetTest {
 
 		Set<String> set = new HashSet<String>();
 
-		boolean b = set.isEmpty();// ÅĞ¶ÏÊÇ·ñÎª¿Õ¼¯£»
+		boolean b = set.isEmpty();// åˆ¤æ–­æ˜¯å¦ä¸ºç©ºé›†
 		System.out.println(b);
 
 		set.add("a");
 		set.add("b");
 		set.add("c");
-		set.add("d");// SetµÄÌí¼Ó£»
+		set.add("d");// Setçš„æ·»åŠ 
 
-		Iterator<String> it = set.iterator();// µü´úÆ÷µÄÊ¹ÓÃ£»
+		Iterator<String> it = set.iterator();// è¿­ä»£å™¨çš„ä½¿ç”¨ï¼›
 
 		while (it.hasNext()) {
 			String m = it.next();
 			System.out.println(m);
 		}
 
-		System.out.println(set);// °ÑSetÌá³öÀ´£»
+		System.out.println(set);// æŠŠSetæå‡ºæ¥ï¼›
 
-		int i = set.size();// ²é¿´setµÄ³¤¶È£»
-		System.out.println("ÔÚclearÇ°set.size()µÄÖµÎª--¡·" + i);
+		int i = set.size();// æŸ¥çœ‹setçš„é•¿åº¦ï¼›
+		System.out.println("ï¿½ï¿½clearÇ°set.size()ï¿½ï¿½ÖµÎª--ï¿½ï¿½" + i);
 
-		set.remove("a");// SetµÄÒÆ³ı£»
+		set.remove("a");// Setçš„ç§»é™¤ï¼›
 		int n = set.size();
-		System.out.println("ÔÚremoveºóset.size()µÄÖµÎª--¡·" + n);
+		System.out.println("ï¿½ï¿½removeï¿½ï¿½set.size()ï¿½ï¿½ÖµÎª--ï¿½ï¿½" + n);
 
-		set.clear();// SetÇå¿Õ£»
+		set.clear();// Setæ¸…ç©ºï¼›
 		int j = set.size();
-		System.out.println("ÔÚclearºóset.size()µÄÖµÎª--¡·" + j);
+		System.out.println("ï¿½ï¿½clearï¿½ï¿½set.size()ï¿½ï¿½ÖµÎª--ï¿½ï¿½" + j);
 	}
 }

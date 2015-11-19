@@ -6,7 +6,7 @@ public class FirstThread extends Thread {
 			System.out.println("FirstThread-->" + i);
 			if (i == 50) {
 				try {
-					Thread.sleep(2000);// 一但线程体执行了这个方法，那么当前线程体就会进入休眠状态；
+					Thread.sleep(2000);// 涓�浣嗙嚎绋嬩綋鎵ц浜嗚繖涓柟娉曪紝閭ｄ箞褰撳墠绾跨▼浣撳氨浼氳繘鍏ヤ紤鐪犵姸鎬侊紱
 				} catch (Exception e) {
 					System.out.println(e);
 				}

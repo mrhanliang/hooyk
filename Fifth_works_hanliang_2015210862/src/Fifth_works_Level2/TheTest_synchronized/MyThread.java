@@ -5,13 +5,13 @@ public class MyThread implements Runnable {
 
 	public void run() {
 		while (true) {
-			synchronized (this) {// 只要有一个线程执行了这段代码，那么带有同样的同步锁的所有的代码都不能被另一个想执行有这样同步锁代码的线程执行，需要等上一个线程执行完才可以；如：Flie
-									// 深入同步代码 的例子；
+			synchronized (this) {// 鍙鏈変竴涓嚎绋嬫墽琛屼簡杩欐浠ｇ爜锛岄偅涔堝甫鏈夊悓鏍风殑鍚屾閿佺殑鎵�鏈夌殑浠ｇ爜閮戒笉鑳借鍙︿竴涓兂鎵ц鏈夎繖鏍峰悓姝ラ攣浠ｇ爜鐨勭嚎绋嬫墽琛岋紝闇�瑕佺瓑涓婁竴涓嚎绋嬫墽琛屽畬鎵嶅彲浠ワ紱濡傦細Flie
+				// 娣卞叆鍚屾浠ｇ爜 鐨勪緥瀛愶紱
 				if (i < 0) {
 					break;
 				}
 
-				// Thread.currentThread()作用是检测使用这段代码的是第几线程；他是Tread的静态函数；
+				// Thread.currentThread()浣滅敤鏄娴嬩娇鐢ㄨ繖娈典唬鐮佺殑鏄鍑犵嚎绋嬶紱浠栨槸Tread鐨勯潤鎬佸嚱鏁帮紱
 				System.out.println(Thread.currentThread().getName() + i);
 
 				i--;

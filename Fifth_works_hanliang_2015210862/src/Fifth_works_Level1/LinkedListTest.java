@@ -8,27 +8,27 @@ public class LinkedListTest {
 	public static void main(String args[]) {
 		List<String> linkedlist = new LinkedList<String>();
 
-		boolean b1 = linkedlist.isEmpty();// ÅĞ¶ÏÊÇ·ñÎª¿Õ£»
+		boolean b1 = linkedlist.isEmpty();// åˆ¤æ–­æ˜¯å¦ä¸ºç©º
 		System.out.println(b1);
 
-		linkedlist.add("one");// linkedListµÄ¼ÓÈë£»
+		linkedlist.add("one");// linkedListçš„åŠ å…¥ï¼›
 		linkedlist.add("two");
 		linkedlist.add("three");
 		linkedlist.add("four");
 		linkedlist.add("five");
 
-		System.out.println(linkedlist);// Ìá³öËùÓĞµÄlinkedList£»
+		System.out.println(linkedlist);// æå‡ºæ‰€æœ‰çš„linkedListï¼›
 
-		String s1 = linkedlist.get(1);// Ìá³öÌØ¶¨µÄÒ»¸ölinkedList;
+		String s1 = linkedlist.get(1);// æå‡ºç‰¹å®šçš„ä¸€ä¸ªlinkedList;
 		System.out.println(s1);
 
-		int i = linkedlist.size();// ²é¿´linkedListµÄ´óĞ¡£»
-		System.out.println("ÔÚclearÇ°linkedListµÄ´óĞ¡--¡·" + i);
+		int i = linkedlist.size();// æŸ¥çœ‹linkedListçš„å¤§å°ï¼›
+		System.out.println("åœ¨clearå‰linkedListçš„å¤§å°--ã€‹" + i);
 
-		linkedlist.remove(1);// linkedListµÄÒÆ³ı£»
+		linkedlist.remove(1);// linkedListçš„ç§»é™¤ï¼›
 
-		linkedlist.clear();// linkedListµÄÇå¿Õ£»
+		linkedlist.clear();// linkedListçš„æ¸…ç©ºï¼›
 		int j = linkedlist.size();
-		System.out.println("ÔÚclearºólinkedListµÄ´óĞ¡--¡·" + j);
+		System.out.println("åœ¨clearålinkedListçš„å¤§å°--ã€‹" + j);
 	}
 }

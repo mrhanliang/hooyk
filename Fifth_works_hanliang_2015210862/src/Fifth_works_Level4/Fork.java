@@ -1,16 +1,16 @@
 package Fifth_works_Level4;
 
 public class Fork {
-	/* 5Ö»¿ê×Ó£¬³õÊ¼Îª¶¼Î´±»ÓÃ */
+	/* 5åªç­·å­ï¼Œåˆå§‹ä¸ºéƒ½æœªè¢«ç”¨ */
 	private boolean[] used = { false, false, false, false, false, false };
 
-	/* Ö»ÓĞµ±×óÓÒÊÖµÄ¿ê×Ó¶¼Î´±»Ê¹ÓÃÊ±£¬²ÅÔÊĞí»ñÈ¡¿ê×Ó£¬ÇÒ±ØĞëÍ¬Ê±»ñÈ¡×óÓÒÊÖ¿ê×Ó */
+	/* åªæœ‰å½“å·¦å³æ‰‹çš„ç­·å­éƒ½æœªè¢«ä½¿ç”¨æ—¶ï¼Œæ‰å…è®¸è·å–ç­·å­ï¼Œä¸”å¿…é¡»åŒæ—¶è·å–å·¦å³æ‰‹ç­·å­ */
 	public synchronized void takeFork() {
 		String name = Thread.currentThread().getName();
 		int i = Integer.parseInt(name);
 		while (used[i] || used[(i + 1) % 5]) {
 			try {
-				wait();// Èç¹û×óÓÒÊÖÓĞÒ»Ö»Õı±»Ê¹ÓÃ£¬µÈ´ı
+				wait();// å¦‚æœå·¦å³æ‰‹æœ‰ä¸€åªæ­£è¢«ä½¿ç”¨ï¼Œç­‰å¾…
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -20,14 +20,14 @@ public class Fork {
 		used[(i + 1) % 5] = true;
 	}
 
-	/* ±ØĞëÍ¬Ê±ÊÍ·Å×óÓÒÊÖµÄ¿ê×Ó */
+	/* å¿…é¡»åŒæ—¶é‡Šæ”¾å·¦å³æ‰‹çš„ç­·å­ */
 	public synchronized void putFork() {
 		String name = Thread.currentThread().getName();
 		int i = Integer.parseInt(name);
 
 		used[i] = false;
 		used[(i + 1) % 5] = false;
-		notifyAll();// »½ĞÑÆäËûÏß³Ì
+		notifyAll();// å”¤é†’å…¶ä»–çº¿ç¨‹
 	}
 
 }

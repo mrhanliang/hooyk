@@ -2,12 +2,12 @@ package Fifth_works_Level2.Firstway_Thread;
 
 public class Test {
 	public static void main(String args[]) {
-		// Éú³ÉÏß³ÌÀàµÄ¶ÔÏó£»
+		// ç”Ÿæˆçº¿ç¨‹ç±»çš„å¯¹è±¡ï¼›
 		FirstThread ft = new FirstThread();
-		// Æô¶¯Ïß³Ì£»
+		// å¯åŠ¨çº¿ç¨‹ï¼›
 		ft.start();
 
-		// ft.run();Èç¹ûÖ´ĞĞÕâ¸öº¯Êı£¬¾Í²»ÊÇ¶àÏß³ÌÁË£¬¶øÊÇÖ÷Ïß³Ì£¬»á°´Ë³ĞòÒ»¸öÒ»¸öµÄÖ´ĞĞ£»
+		// ft.run();å¦‚æœæ‰§è¡Œè¿™ä¸ªå‡½æ•°ï¼Œå°±ä¸æ˜¯å¤šçº¿ç¨‹äº†ï¼Œè€Œæ˜¯ä¸»çº¿ç¨‹ï¼Œä¼šæŒ‰é¡ºåºä¸€ä¸ªä¸€ä¸ªçš„æ‰§è¡Œï¼›
 
 		for (int i = 0; i < 100; i++) {
 			System.out.println("main-->" + i);

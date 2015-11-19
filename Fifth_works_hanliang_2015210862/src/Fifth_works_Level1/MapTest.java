@@ -9,27 +9,27 @@ public class MapTest {
 
 		Map<String, String> map = new HashMap<String, String>();
 
-		boolean b1 = map.isEmpty();// ÅĞ¶ÏÊÇ·ñÎª¿Õ¼¯£»
+		boolean b1 = map.isEmpty();// åˆ¤æ–­æ˜¯å¦ä¸ºç©ºé›†ï¼›
 		System.out.println(b1);
 
-		map.put("a", "A");// ·ÅÈë¼üÖµ¶Ô£»
+		map.put("a", "A");// æ”¾å…¥é”®å€¼å¯¹ï¼›
 		map.put("b", "B");
 		map.put("c", "C");
 		map.put("d", "D");
 		map.put("e", "E");
 
-		System.out.println(map);// Ìá³öËùÓĞµÄ¼üÖµ¶Ô£»
+		System.out.println(map);// æå‡ºæ‰€æœ‰çš„é”®å€¼å¯¹ï¼›
 
-		int i = map.size();// ²é¿´mapµÄ³¤¶È£»
-		System.out.println("ÔÚclearÇ°mapµÄ´óĞ¡--¡·" + i);
+		int i = map.size();// æŸ¥çœ‹mapçš„é•¿åº¦ï¼›
+		System.out.println("åœ¨clearå‰mapçš„å¤§å°--ã€‹" + i);
 
-		String j = map.get("a");// Ìá³öa¼ü¶ÔÓ¦µÄÖµ£»
+		String j = map.get("a");// æå‡ºaé”®å¯¹åº”çš„å€¼ï¼›
 		System.out.println(j);
 
-		map.remove("b");// ³ıÈ¥map.put("b","B");
+		map.remove("b");// é™¤å»map.put("b","B");
 
-		map.clear();// mapµÄÇå¿Õ£»
+		map.clear();// mapçš„æ¸…ç©º
 		int n = map.size();
-		System.out.println("ÔÚclearºómapµÄ´óĞ¡--¡·" + n);
+		System.out.println("åœ¨clearåmapçš„å¤§å°--ã€‹" + n);
 	}
 }

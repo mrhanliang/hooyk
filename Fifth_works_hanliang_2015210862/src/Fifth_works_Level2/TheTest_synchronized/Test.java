@@ -3,15 +3,15 @@ package Fifth_works_Level2.TheTest_synchronized;
 public class Test {
 	public static void main(String args[]) {
 		MyThread mt = new MyThread();
-		// Éú³ÉÁ½¸öThread¶ÔÏó£¬µ«ÊÇÕâÁ½¸öThread¶ÔÏóÊÇ¹«ÓÃµÄÒ»¸öÏß³ÌÌå£»
+		// ç”Ÿæˆä¸¤ä¸ªThreadå¯¹è±¡ï¼Œä½†æ˜¯è¿™ä¸¤ä¸ªThreadå¯¹è±¡æ˜¯å…¬ç”¨çš„ä¸€ä¸ªçº¿ç¨‹ä½“ï¼›
 		Thread t1 = new Thread(mt);
 		Thread t2 = new Thread(mt);
 
-		// Ã¿¸öÏß³Ì¶¼ÓĞÃû×Ö£¬¿ÉÒÔÍ¨¹ıThreadÖĞµÄsetName()µÄ·½·¨À´Éè¼ÆÏß³ÌµÄÃû×Ö£¬Ò²¿ÉÒÔÍ¨¹ıThreadÖĞµÄgetName()À´»ñÈ¡Ïß³ÌµÄÃû×Ö£»
-		t1.setName("Ïß³Ìa");
-		t2.setName("Ïß³Ìb");
+		// æ¯ä¸ªçº¿ç¨‹éƒ½æœ‰åå­—ï¼Œå¯ä»¥é€šè¿‡Threadä¸­çš„setName()çš„æ–¹æ³•æ¥è®¾è®¡çº¿ç¨‹çš„åå­—ï¼Œä¹Ÿå¯ä»¥é€šè¿‡Threadä¸­çš„getName()æ¥è·å–çº¿ç¨‹çš„åå­—ï¼›
+		t1.setName("çº¿ç¨‹a");
+		t2.setName("çº¿ç¨‹b");
 
-		// ·Ö±ğÆô¶¯Á½¸öÏß³Ì£»
+		// åˆ†åˆ«å¯åŠ¨ä¸¤ä¸ªçº¿ç¨‹ï¼›
 		t1.start();
 		t2.start();
 	}

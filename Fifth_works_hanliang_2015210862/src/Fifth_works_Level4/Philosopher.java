@@ -23,7 +23,7 @@ public class Philosopher extends Thread {
 	public void eating() {
 		System.out.println("I am Eating:" + name);
 		try {
-			sleep(1000);// Ä£Äâ³Ô·¹£¬Õ¼ÓÃÒ»¶ÎÊ±¼ä×ÊÔ´
+			sleep(1000);// æ¨¡æ‹Ÿåƒé¥­ï¼Œå ç”¨ä¸€æ®µæ—¶é—´èµ„æº
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -33,7 +33,7 @@ public class Philosopher extends Thread {
 	public void thinking() {
 		System.out.println("I am Thinking:" + name);
 		try {
-			sleep(1000);// Ä£ÄâË¼¿¼
+			sleep(1000);// æ¨¡æ‹Ÿæ€è€ƒ
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

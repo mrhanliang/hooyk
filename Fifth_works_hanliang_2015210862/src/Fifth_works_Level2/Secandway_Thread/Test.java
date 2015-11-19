@@ -2,17 +2,17 @@ package Fifth_works_Level2.Secandway_Thread;
 
 public class Test {
 	public static void main(String args[]) {
-		// Éú³ÉÒ»¸öRunnable½Ó¿ÚÊµÏÖÀàµÄ¶ÔÏó£»
+		// ç”Ÿæˆä¸€ä¸ªRunnableæ¥å£å®ç°ç±»çš„å¯¹è±¡ï¼›
 		RunnableImple ri = new RunnableImple();
-		// Éú³É Ò»¸öThread¶ÔÏó£¬²¢½«Runnable½Ó¿ÚÊµÏÖµÄ¶ÔÏó×÷Îª²ÎÊı´«µİ¸ø¸ÃThread¶ÔÏó£»
+		// ç”Ÿæˆ ä¸€ä¸ªThreadå¯¹è±¡ï¼Œå¹¶å°†Runnableæ¥å£å®ç°çš„å¯¹è±¡ä½œä¸ºå‚æ•°ä¼ é€’ç»™è¯¥Threadå¯¹è±¡ï¼›
 		Thread t = new Thread(ri);
 
 		t.setPriority(Thread.MAX_PRIORITY);
-		// »òÕßÊÇÍ¨¹ıt.setPriority(Thread.MIN_PRIORITY)£¬À´¸Ä±äÏß³ÌÓÅÏÈ¼¶£¨×î´óÊÇ10£¬×îĞ¡ÊÇ1£©£»Ö»ÄÜËµÓÅÏÈ¼¶Ô½´ó£¬ÏÈÖ´ĞĞµÄ¸ÅÂÊ¾ÍÔ½´ó£¬²»ÄÜËµÓÅÏÈ¼¶Ô½´ó£¬¾ÍÒ»¶¨ÏÈÖ´ĞĞ£»
+		// æˆ–è€…æ˜¯é€šè¿‡t.setPriority(Thread.MIN_PRIORITY)ï¼Œæ¥æ”¹å˜çº¿ç¨‹ä¼˜å…ˆçº§ï¼ˆæœ€å¤§æ˜¯10ï¼Œæœ€å°æ˜¯1ï¼‰ï¼›åªèƒ½è¯´ä¼˜å…ˆçº§è¶Šå¤§ï¼Œå…ˆæ‰§è¡Œçš„æ¦‚ç‡å°±è¶Šå¤§ï¼Œä¸èƒ½è¯´ä¼˜å…ˆçº§è¶Šå¤§ï¼Œå°±ä¸€å®šå…ˆæ‰§è¡Œï¼›
 
 		System.out.println(t.getPriority());
 
-		// Í¨ÖªThread¶ÔÏó£¬Ö´ĞĞstart·½·¨£»
+		// é€šçŸ¥Threadå¯¹è±¡ï¼Œæ‰§è¡Œstartæ–¹æ³•ï¼›
 		t.start();
 
 		for (int i = 0; i < 100; i++) {

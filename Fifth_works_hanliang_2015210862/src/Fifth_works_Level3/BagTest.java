@@ -8,13 +8,13 @@ public class BagTest {
 		bag.insert("Tuseday");
 		bag.insert("Wednesday");
 
-		System.out.println("¼¯ºÏÖĞÔªËØÎª£º" + bag.toString());
+		System.out.println("é›†åˆä¸­å…ƒç´ ä¸ºï¼š" + bag.toString());
 
 		bag.remove("Tuseday");
 
-		System.out.println("É¾³ıTuesdayºó£¬¼¯ºÏÖĞÔªËØÎª£º" + bag.toString());
-		System.out.println("²éÕÒMondayµÄ½á¹ûÎª£º" + bag.find("Monday"));
-		System.out.println("ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿ÕµÄ½á¹ûÎª£º" + bag.isEmpty());
+		System.out.println("åˆ é™¤Tuesdayåï¼Œé›†åˆä¸­å…ƒç´ ä¸ºï¼š" + bag.toString());
+		System.out.println("æŸ¥æ‰¾Mondayçš„ç»“æœä¸ºï¼š" + bag.find("Monday"));
+		System.out.println("åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©ºçš„ç»“æœä¸ºï¼š" + bag.isEmpty());
 		bag.insert("Monday");
 	}
 }

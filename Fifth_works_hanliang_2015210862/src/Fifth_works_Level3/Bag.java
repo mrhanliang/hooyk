@@ -1,36 +1,36 @@
 package Fifth_works_Level3;
 
 public class Bag {
-	private String[] muster; // ÒÔÊı×é·½Ê½±£´æ¼¯ºÏÖĞÔªËØ
-	private int number; // ¼ÆÊı¼¯ºÏÖĞÔªËØÊıÄ¿
+	private String[] muster; // ä»¥æ•°ç»„æ–¹å¼ä¿å­˜é›†åˆä¸­å…ƒç´ 
+	private int number; //è®¡æ•°é›†åˆä¸­å…ƒç´ æ•°ç›®
 	private final int MAXCOUNT = 100;
 
 	public Bag() {
-		// musterÊı×éÓÃÀ´±£´æ¼¯ºÏµÄÔªËØ¸öÊı£¬¼ÙÉèÔªËØ¸öÊı²»³¬¹ıMAXCOUNT¸ö
+		// musteræ•°ç»„ç”¨æ¥ä¿å­˜é›†åˆçš„å…ƒç´ ä¸ªæ•°ï¼Œå‡è®¾å…ƒç´ ä¸ªæ•°ä¸è¶…è¿‡MAXCOUNTä¸ª
 		muster = new String[MAXCOUNT];
 		number = 0;
 	}
 
 	public void insert(String str) {
-		// Ê×ÏÈ¼ì²â´ı²åÈëÔªËØÊÇ·ñÒÑ¾­ÔÚ¼¯ºÏÖĞ
+		// é¦–å…ˆæ£€æµ‹å¾…æ’å…¥å…ƒç´ æ˜¯å¦å·²ç»åœ¨é›†åˆä¸­
 		int i = find(str);
 		if (0 <= i && i < number) {
-			System.out.println("´ı²åÈëÔªËØÒÑ¾­´æÔÚ¼¯ºÏÖĞ£¡");
+			System.out.println("å¾…æ’å…¥å…ƒç´ å·²ç»å­˜åœ¨é›†åˆä¸­ï¼");
 		} else {
 			if (number < muster.length) {
 				muster[number] = new String(str);
 				number++;
 			} else
-				System.out.println("¼¯ºÏ¿Õ¼äÒÑÂú£¬²»ÄÜÌí¼ÓĞÂÔªËØ£º" + str);
+				System.out.println("é›†åˆç©ºé—´å·²æ»¡ï¼Œä¸èƒ½æ·»åŠ æ–°å…ƒç´ ï¼š" + str);
 		}
 	}
 
 	public void remove(String str) {
 		int i = find(str);
 		if (0 <= i && i < number) {
-			// ÕÒµ½´ı²éÔªËØ£¬ÔòÉ¾³ı¸ÃÔªËØ
+			// æ‰¾åˆ°å¾…æŸ¥å…ƒç´ ï¼Œåˆ™åˆ é™¤è¯¥å…ƒç´ 
 			muster[i] = null;
-			// Èç¹û´ıÉ¾³ıÔªËØ²»ÊÇ×îºóÒ»¸öÔªËØ£¬Ôò°ÑºóÃæµÄÔªËØÏòÇ°ÒÆ¶¯
+			//å¦‚æœå¾…åˆ é™¤å…ƒç´ ä¸æ˜¯æœ€åä¸€ä¸ªå…ƒç´ ï¼Œåˆ™æŠŠåé¢çš„å…ƒç´ å‘å‰ç§»åŠ¨
 			if (i < number - 1) {
 				for (; i < number; i++) {
 					muster[i] = muster[i + 1];
@@ -38,7 +38,7 @@ public class Bag {
 			}
 			number--;
 		} else {
-			System.out.println("Î´ÕÒµ½´ıÉ¾³ıÔªËØ£¡");
+			System.out.println("æœªæ‰¾åˆ°å¾…åˆ é™¤å…ƒç´ ï¼");
 		}
 	}
 
@@ -54,11 +54,11 @@ public class Bag {
 	}
 
 	public int find(String str) {
-		// Èç¹ûÕÒµ½´ı²éÔªËØ£¬Ôò·µ»ØÆäÔÚÊı×éÖĞµÄÎ»ÖÃ
-		// ·ñ Ôò·µ»Ø-1
+		// å¦‚æœæ‰¾åˆ°å¾…æŸ¥å…ƒç´ ï¼Œåˆ™è¿”å›å…¶åœ¨æ•°ç»„ä¸­çš„ä½ç½®
+		// å¦ åˆ™è¿”å›-1
 		int i;
 		for (i = 0; i < number; i++) {
-			// ²éÕÒÌØ¶¨ÔªËØ
+			// æŸ¥æ‰¾ç‰¹å®šå…ƒç´ 
 			if (muster[i].compareTo(str) == 0)
 				break;
 		}
@@ -69,7 +69,7 @@ public class Bag {
 	}
 
 	public String toString() {
-		String str = "ÔªËØ¸öÊı=" + number + "  ";
+		String str = "å…ƒç´ ä¸ªæ•°=" + number + "  ";
 		int i;
 		for (i = 0; i < number - 1; i++) {
 			str = str + muster[i] + ",";
