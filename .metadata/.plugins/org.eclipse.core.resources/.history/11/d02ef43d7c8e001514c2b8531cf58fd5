@@ -1,0 +1,9 @@
+package Fifth_works_Leve1;
+
+import java.util.List;
+
+import java.util.LinkedList;
+
+public class LinkedListTest {
+
+}

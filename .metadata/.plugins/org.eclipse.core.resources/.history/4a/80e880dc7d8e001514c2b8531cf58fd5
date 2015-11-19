@@ -1,0 +1,5 @@
+package Fifth_works_Level2.TheTest_synchronized;
+
+public class MyThread implements Runnable{
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Fifth_works_hanliang_2015210862/src/Fifth_works_Level3/BagTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Fifth_works_Level3.BagTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Fifth_works_hanliang_2015210862"/>
+</launchConfiguration>
